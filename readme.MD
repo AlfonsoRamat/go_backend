@@ -1,0 +1,3 @@
+## Go commands
+
+docker run --name mydb -p 5432:5432 -e POSTGRES_PASSWORD=1234 -e POSTGRES_USER=alfon -e POSTGRES_DB=prueba -v /postgres/data:/var/lib/postgresql/data -d postgres && go get github.com/joho/godotenv && go get github.com/go-chi/chi && go get github.com/go-chi/cors && go install github.com/kyleconroy/sqlc/cmd/sqlc@latest && go install github.com/pressly/goose/v3/cmd/goose@latest && go mod vendor
